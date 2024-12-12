@@ -1,0 +1,72 @@
+/* Reset margin dan padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.content {
+  padding: 0px;
+  text-align: center;
+}
+
+/* Bottom Navbar Styling */
+.bottom-navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid #ddd;
+}
+
+.nav-item {
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.nav-item i {
+  font-size: 24px;
+  color: #333;  /* Default color for non-selected items */
+}
+
+.nav-item2 {
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.nav-item2 i {
+  font-size: 24px;
+  color: #3498db;  /* Default color for non-selected items */
+}
+
+
+
+
+.nav-item.active i {
+  color: #3498db;  /* Blue color for active icon */
+}
+
+.nav-item:hover i {
+  transform: scale(1.2);  /* Slight zoom effect on hover */
+}
+
+/* Styling for item text */
+.nav-item span {
+  display: none;
+}
